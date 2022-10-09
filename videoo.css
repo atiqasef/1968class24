@@ -1,0 +1,412 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+.grybg{
+    background-color: #f9fafb;
+}
+/* Begain Custom Style */
+.main-header .container-fluid{
+        max-width: 1480px;
+}
+body .btn-primary{
+    background-color: #e73a3e !important;
+    border-color: #e73a3e;
+    padding: 11px 40px;
+    font-size: 16px;
+    position: relative;
+    z-index: 1;
+}
+body .btn-primary::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: #111;
+    border-color: #111;
+    z-index: -1;
+    transition: .3s;
+}
+body .btn-primary:hover{
+    border-color: #111;
+}
+body .btn-primary:hover::after{
+    width: 100%;
+}
+/* ========================Menu========================== */
+
+ul.our-primary-menu{
+
+}
+
+ul.our-primary-menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    color: #111;
+    font-weight: 500;
+}
+i.fa-solid.fa-chevron-down {
+    font-size: 9px;
+   
+}
+.lal{
+    color: #e73a3e;
+}
+
+ul.our-primary-menu li a:hover{
+    color: #e73a3e;
+}
+
+/* DropDown Menu Css */
+ul.our-primary-menu li{
+    position: relative;
+}
+ul.our-primary-menu li ul{
+    position: absolute;
+    top: 140%;
+    left: 0;
+    width: 265px;
+    background-color: #fafafa;
+    list-style: none;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s ease-in-out;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 0.1);
+}
+ul.our-primary-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 120%;
+}
+ul.our-primary-menu li ul li{
+    flex-direction: column;
+}
+ul.our-primary-menu li ul li a{
+    transition: all .4s ease-in-out;
+}
+ul.our-primary-menu li ul li a:hover{
+    letter-spacing: 1px;
+}
+.l-zero{
+    letter-spacing: normal;
+    color: #e73a3e;
+}
+
+.side {
+    margin-left: 136px;
+}
+/* Another DropDown Css Start */
+
+ul.our-primary-menu li ul li{
+    position: relative;
+}
+ul.our-primary-menu li ul li ul {
+    position: absolute;
+    left: -111%;
+    width: 265px;
+    background-color: #fafafa;
+    padding: 10px;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transition: all .4s ease-in-out;
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 0.1);
+    transform: translateY(-62px);
+}
+ul.our-primary-menu li ul li:hover ul{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+.header-info{}
+.header-search{
+    width: 60px;
+    font-size: 22px;
+    text-align: center;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+}
+.header-call{
+    width: 220px;
+}
+.header-call-icon{
+    font-size: 33px ;
+    color: #e73a3e;
+}
+.header-call-info span{
+    color: #606060;
+}
+.header-call-info a{
+    color: #111;
+    font-weight: 500;
+    text-decoration: none;
+    /* font-size: 18px; */
+}
+.header-button{}
+
+
+/* ====================================Banner Css================================== */
+.slider-section{
+    background: url(./main-banner2.jpg) no-repeat top center fixed;
+    background-size: cover;
+    height: 800px;
+    
+}
+.slider-content-wrap{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-social {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-bottom: -42%;
+    padding-bottom: 30px;
+}
+
+.slider-content{}
+.slider-content h6 {
+    color: #e73a3e;
+    margin-top: 50%;
+    font-size: 18px;
+    font-weight: 400;
+}
+.slider-content h1{
+    font-size: 60px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.slider-content p{
+    color: #606060;
+    font-weight: 400;
+    /* max-width: 650px; */
+    font-size: 18px;
+}
+.slider-content a{}
+
+
+.header-social ul{
+    list-style: none;
+    padding-left: 0;
+}
+.header-social ul li{}
+.header-social ul li span{
+    font-size: 18px;
+    display: inline-block ;
+    margin-right: 50px;
+    position: relative;
+}
+.header-social ul li span::after{
+    content: "";
+    position: absolute;
+    top: 51%;
+    left: 90px;
+    height: 1px;
+    width: 35px;
+    background: #111;
+}
+.header-social ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 14px;
+    color: #111;
+    font-size: 19px;
+}
+
+
+/* =======================================Logo Section Start==================================== */
+
+
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.client-logo{}
+.client-logo ul{
+    list-style: none;
+    padding-left: 0;
+}
+/* =======================================Logo Section End==================================== */
+
+
+
+
+
+
+/* =======================================About img Section start=================================== */
+
+
+.about-image{
+    position: relative;
+}
+.about-img-text{
+    background: url(./shape.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 2px;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+.about-img-text h2 {
+    color: #e73a3e;
+    font-size: 70px;
+}
+.about-img-text p{
+    color: #111111;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+}
+
+.about-text{}
+.finix-text h6{
+    color: #e73a3e;
+}
+.finix-text h3{
+    font-size: 36px;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.finix-text p{
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #606060;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+.finix-text strong{
+    font-size: 18px;
+    color: #606060;
+    font-weight: 400;
+}
+.finix-text ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.finix-text ul li{
+    list-style-type: none;
+    color: #606060;
+    margin-bottom: 10px;
+    position: relative;
+    
+}
+.finix-text ul li::before{
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 10px;
+    color: #e73a3e;
+    
+    
+}
+.finix-text a{}
+
+
+
+
+
+/* =======================================About img Section End=================================== */
+
+
+
+/* ==========================================Why Choose Us Section=============================== */
+
+.fetaures-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    transition: .5s;
+}
+.fetaures-item:hover{
+    transform: translateY(-12px);
+}
+.fetaures-item::before {
+    content: "";
+    position: absolute;
+    top: -120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 90%;
+    height: 60%;
+    border-radius: 50%;
+    background: #fdebeb;
+}
+.fetaures-item:hover .ft-icon i{
+    color: #fff;
+    background: #e73a3e ;
+}
+.ft-icon i{
+    font-size: 32px;
+    color: #e73a3e;
+    background: #fff;
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+    border-radius: 50%;
+    position: relative;
+    transition: .5s;
+}
+.fetaures-item h3{}
+.fetaures-item p{}
+.mtop{
+    margin-top: -30px;
+}
+.play-animation-btn {
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+    background-color: #fff;
+    font-size: 60px;
+    text-align: center;
+    line-height: 90px;
+    color: #e73a3e !important;
+    border-radius: 50%;
+    position: absolute;
+    right: 30%;
+    bottom: 9%;
+}
+.play-animation-btn::before{
+    content: "";
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background: #e73a3e;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: playbtn 1.6s ease-out infinite;
+}
+@keyframes playbtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+.finix-text{
+    position: relative;
+}
